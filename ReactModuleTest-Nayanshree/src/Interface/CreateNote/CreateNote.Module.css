@@ -1,0 +1,124 @@
+.CreateContainer {
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 25%;
+  z-index: 5;
+  right: 27%;
+  border-radius: 5px;
+}
+
+.chatpopup {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chatpopup p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 480;
+  line-height: 40px;
+  letter-spacing: 0.035em;
+}
+
+.chatinput {
+  display: flex;
+  gap: 20px;
+}
+
+.chatinput label {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 480;
+  line-height: 40px;
+  letter-spacing: 0.035em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.chatinput input {
+  width: 320px;
+  height: 40px;
+  border: 2px solid #CCCCCC;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.035em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 22px;
+  border: 2px;
+  background: #FFFFFF;
+  padding-left: 20px;
+}
+
+.groupcolor {
+  display: flex;
+  gap: 20px;
+}
+
+.groupcolor label {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 480;
+  line-height: 40px;
+  letter-spacing: 0.035em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.createbtn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.createbtn button {
+  width: 136px;
+  height: 36px;
+  border-radius: 11px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.04px;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
+  background: #001F8B;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .CreateContainer {
+    position: fixed;
+    top: 30%;
+    right: 5%;
+    width: 90%;
+  }
+
+  .chatpopup {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .chatinput {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chatinput input {
+    width: 90%;
+  }
+
+  .groupcolor {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .createbtn {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
